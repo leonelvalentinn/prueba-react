@@ -12,8 +12,14 @@ export const AddItem = ({ openNewItem, data, setData, setOpenNewItem }) => {
 
     const form = event.target
     const formData = new FormData(form)
-    const newItemId = data[data.length - 1].id + 1
+    let newItemId
     const formEl = document.getElementById('form')
+
+    if (data.length > 0) {
+      newItemId = data[data.length - 1].id + 1
+    } else {
+      newItemId = 0
+    }
 
     const item = {
       id: newItemId,

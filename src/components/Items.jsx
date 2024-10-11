@@ -62,6 +62,9 @@ export const Items = () => {
             ))
           )
         }
+        {
+          data.length < 1 && <span className='text-nowrap text-xl'>No hay personajes, registra uno</span>
+        }
       </div>
 
       <AddItem

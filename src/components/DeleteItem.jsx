@@ -31,7 +31,7 @@ export const DeleteItem = ({ openDeleteItem, setOpenDeleteItem, selectedItem, da
           <CloseIcon className='w-6 h-6' />
         </button>
         <h2 className='text-2xl font-bold text-gray-200 mb-4'>¡Atención!</h2>
-        <p>¿Estás seguro de borrar el personaje de <span className='text-violet-400'>{selectedItem && data[selectedItem].name}</span>?</p>
+        <p>¿Estás seguro de borrar el personaje de <span className='text-violet-400'>{selectedItem !== null && data[selectedItem].name}</span>?</p>
         <div className='w-full flex gap-4 justify-end items-center mt-4'>
           <button className='px-4 py-2 rounded-lg border border-violet-500' onClick={() => setOpenDeleteItem(false)}>Cancelar</button>
           <button className='px-4 py-2 rounded-lg border border-violet-500 bg-violet-500' onClick={handleDeleteItem}>Borrar</button>
