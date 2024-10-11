@@ -4,7 +4,7 @@
 
 1. Clona el repositorio
    ```sh
-   git clone https://github.com/leonelvalentinn/testDev-frontend.git
+   git clone https://github.com/leonelvalentinn/prueba-react.git
    ```
 2. Instala los paquetes de npm
    ```sh
